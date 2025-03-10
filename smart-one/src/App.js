@@ -14,13 +14,13 @@ const App = () => {
   const [questions, setQuestions] = useState([]);
 
   const categories = [
-    { name: "Biology", id: 17 },
-    { name: "Chemistry", id: 17 },
-    { name: "General Knowledge", id: 9 },
-    { name: "History", id: 23 },
-    { name: "Mathematics", id: 19 },
-    { name: "Physics", id: 17 },
-    { name: "Social Science", id: 22 },
+    { name: "🧬 Biology", id: 17 },
+    { name: "🧪 Chemistry", id: 17 },
+    { name: "🧠 General Knowledge", id: 9 },
+    { name: "🏛️ History", id: 23 },
+    { name: "📐 Mathematics", id: 19 },
+    { name: "⚛️ Physics", id: 17 },
+    { name: "🌍 Social Science", id: 22 },
   ];
 
   const handleCategorySelect = (cat) => {
