@@ -7,7 +7,7 @@ const Navbar = ({ setPage }) => {
   return (
     <nav className="bg-blue-600 text-white p-4 flex justify-between items-center relative">
       <div className="flex items-center">
-        <img src="/assets/logo.png" alt="Quiz It Logo" className="h-12 mr-2" />
+      <img src="/assets/logo2.png" alt="Quiz It Logo" className="h-12 mr-2" />
         <span className="text-xl font-bold hidden md:block">Quiz App</span>
       </div>
       {/* Hamburger Menu for Mobile */}
