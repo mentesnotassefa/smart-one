@@ -20,6 +20,8 @@ const App = () => {
     { name: "📐 Mathematics", id: 19 },
     { name: "⚛️ Physics", id: 17 },
     { name: "🌍 Social Science", id: 22 },
+    { name: "🌍 Technology", id: 28 },
+
   ];
 
   const handleCategorySelect = (cat) => {
@@ -41,7 +43,10 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-white-100 flex flex-col"
+ 
+    >
+      
       <Navbar setPage={setPage} />
       <main className="flex-grow flex items-center justify-center p-4">
         {page === "home" && <Home onCategory={() => setPage("category")}  />}

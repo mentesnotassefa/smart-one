@@ -32,16 +32,14 @@ const Navbar = ({ setPage }) => {
       </div>
       {/* Mobile Navigation Drawer */}
       {isOpen && (
-        <div className="absolute top-16 right-4 bg-blue-600 p-4 rounded-md shadow-lg md:hidden z-10">
+        <div className="absolute top-16 right-4 bg-red-600 p-4 rounded-md shadow-lg md:hidden z-10">
           <button onClick={() => setPage("home")} className="block w-full text-left py-2 hover:underline">
             Home
           </button>
           <button onClick={() => setPage("category")} className="block w-full text-left py-2 hover:underline">
             Category
           </button>
-          <button onClick={() => setPage("settings")} className="block w-full text-left py-2 hover:underline">
-            Settings
-          </button>
+          
           <button onClick={() => setPage("about")} className="block w-full text-left py-2 hover:underline">
             About
           </button>
