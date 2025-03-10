@@ -10,7 +10,7 @@ const About = ({ onHome }) => {
         Challenge your knowledge with fun and interactive quizzes!
       </p>
       <p className="text-sm md:text-md mb-2">Features:</p>
-      <ul className="text-sm md:text-md mb-4 list-disc list-inside">
+      <ul className="text-sm md:text-md mb-4 text-left">
         <li>✅Multiple quiz categories</li>
         <li>✅Adjustable difficulty levels</li>
         <li>✅Interactive and responsive design</li>

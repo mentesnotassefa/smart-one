@@ -5,7 +5,7 @@ const Navbar = ({ setPage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center relative">
+    <nav className="bg-red-600 text-white p-4 flex justify-between items-center relative">
       <div className="flex items-center">
       <img src="/assets/logo2.png" alt="Quiz It Logo" className="h-12 mr-2" />
         <span className="text-xl font-bold hidden md:block">Quiz App</span>
@@ -25,9 +25,7 @@ const Navbar = ({ setPage }) => {
         <button onClick={() => setPage("category")} className="hover:underline">
           Category
         </button>
-        <button onClick={() => setPage("settings")} className="hover:underline">
-          Settings
-        </button>
+       
         <button onClick={() => setPage("about")} className="hover:underline">
           About
         </button>

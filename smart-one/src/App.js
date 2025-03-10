@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import CategorySelection from "./components/CategorySelection";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
-import Settings from "./components/Settings";
 import About from "./components/About";
 
 const App = () => {
@@ -45,7 +44,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Navbar setPage={setPage} />
       <main className="flex-grow flex items-center justify-center p-4">
-        {page === "home" && <Home onCategory={() => setPage("category")} />}
+        {page === "home" && <Home onCategory={() => setPage("category")}  />}
         {page === "category" && (
           <CategorySelection categories={categories} onSelect={handleCategorySelect} onHome={handleHome} />
         )}
@@ -55,7 +54,7 @@ const App = () => {
         {page === "result" && (
           <Result score={score} total={questions.length} onRestart={handleHome} onHome={handleHome} />
         )}
-        {page === "settings" && <Settings onHome={handleHome} />}
+        
         {page === "about" && <About onHome={handleHome} />}
       </main>
     </div>
