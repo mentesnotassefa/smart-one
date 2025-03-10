@@ -20,7 +20,9 @@ const App = () => {
     { name: "📐 Mathematics", id: 19 },
     { name: "⚛️ Physics", id: 17 },
     { name: "🌍 Social Science", id: 22 },
-    { name: "🌍 Technology", id: 28 },
+    { name: "💻 Computers", id: 18 },
+    { name: "🐾 Animals", id: 27 }
+   
 
   ];
 
@@ -53,9 +55,11 @@ const App = () => {
         {page === "category" && (
           <CategorySelection categories={categories} onSelect={handleCategorySelect} onHome={handleHome} />
         )}
+
         {page === "quiz" && (
           <Quiz category={category} onFinish={handleQuizFinish} onHome={handleHome} />
         )}
+
         {page === "result" && (
           <Result score={score} total={questions.length} onRestart={handleHome} onHome={handleHome} />
         )}
